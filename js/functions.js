@@ -1,4 +1,5 @@
 function validateInput(){
+    let h5Text = verbForExercises.textContent;
     for(i=0;i<verbList.length;i++){
         if(verbList[i].verbTurkish == h5Text){
             let v1Varb = verbList[i].verb1Name;
@@ -24,8 +25,7 @@ function validateInput(){
                 }else{v3Times.innerHTML = `<i class="fas fa-times-circle text-danger"></i>`}
             }
         }
-    }
-    
+    }    
 }
 
 
@@ -63,11 +63,6 @@ function clearInputs() {
     inputV2.value = '';
     inputV3.value = '';
 }
-//let h5Text = getElementById('verb-for-exercises').textContent
-//console.log(h5Text)
-
-
-
 
 function showVerbsGreenIcon (){
     v1Times.innerHTML = `<i class="fas fa-check-circle text-success"></i>`

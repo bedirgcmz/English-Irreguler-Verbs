@@ -8,17 +8,14 @@ const btnGetRandomVerbForExercises = getElementById(
 
 const btnShow = getElementById('btn-show');
 const btnClear = getElementById('btn-clear');
-
 const inputV1 = getElementById('input-v1');
 const inputV2 = getElementById('input-v2');
 const inputV3 = getElementById('input-v3');
 const inputGroupText = document.getElementsByClassName("input-group-text");
-
 const verbForExercises = getElementById('verb-for-exercises');
 const v1Times = getElementById('v1-times');
 const v2Times = getElementById('v2-times');
 const v3Times = getElementById('v3-times');
-
 
 exercisesAllIrregularVerbs.innerHTML = verbList
     .map((verb, index) => {
@@ -31,16 +28,13 @@ exercisesAllIrregularVerbs.innerHTML = verbList
     .join('');
 
 getRandomVerbForExercises();
-let h5Text = verbForExercises.textContent;
-
+//let h5Text = verbForExercises.textContent;
 validateInput();
 
 btnGetRandomVerbForExercises.addEventListener('click', function () {
     getRandomVerbForExercises();
-    
-    h5Text = verbForExercises.textContent;
+    //h5Text = verbForExercises.textContent;
     validateInput()
-    console.log(h5Text)
 });
 
 btnClear.addEventListener('click', function () {
@@ -50,16 +44,14 @@ btnClear.addEventListener('click', function () {
 
 function getVerbForExercises(pVerbIndex) {
     verbForExercises.innerHTML = verbList[pVerbIndex].verbTurkish;
-    h5Text = verbForExercises.textContent;
+    //h5Text = verbForExercises.textContent; 
     validateInput()
-    console.log(h5Text)
     btnShow.addEventListener('click', function () {
         inputV1.value = verbList[pVerbIndex].verb1Name 
         inputV2.value = verbList[pVerbIndex].verb2Name  
         inputV3.value = verbList[pVerbIndex].verb3Name  
         showVerbsGreenIcon();
-    });
-    
+    });    
 }
 
 function getRandomVerbForExercises() {
@@ -73,11 +65,3 @@ function getRandomVerbForExercises() {
         showVerbsGreenIcon();
     });
 }
-
-
-// getRandomVerbForExercises();
-// let h5Text = verbForExercises.textContent;
-// console.log(h5Text)
-// validateInput();
-
-
