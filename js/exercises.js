@@ -1,22 +1,23 @@
-const exercisesAllIrregularVerbs = getElementById(
-    'exercises-all-irregular-verbs'
-);
-
-const btnGetRandomVerbForExercises = getElementById(
-    'get-random-verb-for-exercises'
-);
-
+/**
+ * Varaibles
+ */
+const exercisesAllIrregularVerbs = getElementById('exercises-all-irregular-verbs');
+const btnGetRandomVerbForExercises = getElementById('get-random-verb-for-exercises');
 const btnShow = getElementById('btn-show');
 const btnClear = getElementById('btn-clear');
 const inputV1 = getElementById('input-v1');
 const inputV2 = getElementById('input-v2');
 const inputV3 = getElementById('input-v3');
-const inputGroupText = document.getElementsByClassName("input-group-text");
 const verbForExercises = getElementById('verb-for-exercises');
 const v1Times = getElementById('v1-times');
 const v2Times = getElementById('v2-times');
 const v3Times = getElementById('v3-times');
-
+let v1Varb;
+let v2Varb;
+let v3Varb;
+/**
+ * Print irregular verbs on page for exercise
+ */
 exercisesAllIrregularVerbs.innerHTML = verbList
     .map((verb, index) => {
         return `
@@ -24,28 +25,25 @@ exercisesAllIrregularVerbs.innerHTML = verbList
            <a onClick='getVerbForExercises(${index})' href='#'>${verb.verb1Name}</a>
         </div>
     `;
-    })
-    .join('');
-
-getRandomVerbForExercises();
-//let h5Text = verbForExercises.textContent;
-validateInput();
-
+}).join('');
+/**
+ * Events
+ */
 btnGetRandomVerbForExercises.addEventListener('click', function () {
     getRandomVerbForExercises();
-    //h5Text = verbForExercises.textContent;
-    validateInput()
+    allProcessInputValue()
 });
-
 btnClear.addEventListener('click', function () {
     clearInputs();
     clearVerbsredIcon();
 });
-
+/**
+ * Get verb for exercies
+ * @param {*} pVerbIndex 
+ */
 function getVerbForExercises(pVerbIndex) {
     verbForExercises.innerHTML = verbList[pVerbIndex].verbTurkish;
-    //h5Text = verbForExercises.textContent; 
-    validateInput()
+    allProcessInputValue()
     btnShow.addEventListener('click', function () {
         inputV1.value = verbList[pVerbIndex].verb1Name 
         inputV2.value = verbList[pVerbIndex].verb2Name  
@@ -53,7 +51,9 @@ function getVerbForExercises(pVerbIndex) {
         showVerbsGreenIcon();
     });    
 }
-
+/**
+ * Get random verb for exercies
+ */
 function getRandomVerbForExercises() {
     let randomNumber = getRandomNumber(verbList.length);
     let randomVerb = verbList[randomNumber];
@@ -65,3 +65,8 @@ function getRandomVerbForExercises() {
         showVerbsGreenIcon();
     });
 }
+/**
+ * Call function
+ */
+getRandomVerbForExercises();
+allProcessInputValue();

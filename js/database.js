@@ -1,3 +1,6 @@
+/**
+ * List of irreguler verbs
+ */
 let verbList = [
     {
         verb1Name: 'awake',
@@ -6,7 +9,7 @@ let verbList = [
         verb2Pronunciation: 'evog',
         verb3Name: 'awoken',
         verb3Pronunciation: 'evokın',
-        verbTurkish: 'uyanmak',
+        verbTurkish: 'uyanik',
     },
     {
         verb1Name: 'be',
@@ -24,7 +27,7 @@ let verbList = [
         verb2Pronunciation: 'biıt',
         verb3Name: 'beaten',
         verb3Pronunciation: 'bitın',
-        verbTurkish: 'vurmak',
+        verbTurkish: 'dovmek',
     },
     {
         verb1Name: 'become',
@@ -33,7 +36,7 @@ let verbList = [
         verb2Pronunciation: 'bikeym',
         verb3Name: 'become',
         verb3Pronunciation: 'bikam',
-        verbTurkish: 'olmak',
+        verbTurkish: 'olmak - haline gelmek',
     },
     {
         verb1Name: 'begin',
@@ -105,7 +108,7 @@ let verbList = [
         verb2Pronunciation: 'bıroukt',
         verb3Name: 'brought',
         verb3Pronunciation: 'bıroukt',
-        verbTurkish: 'Getirmek',
+        verbTurkish: 'getirmek',
     },
     {
         verb1Name: 'build',
@@ -141,7 +144,7 @@ let verbList = [
         verb2Pronunciation: 'kouht',
         verb3Name: 'caught',
         verb3Pronunciation: 'kouht',
-        verbTurkish: 'tutmak',
+        verbTurkish: 'tutmak - yakalamak',
     },
     {
         verb1Name: 'choose',
@@ -510,7 +513,7 @@ let verbList = [
         verb2Pronunciation: 'meyd',
         verb3Name: 'made',
         verb3Pronunciation: 'meyd',
-        verbTurkish: 'yapmak',
+        verbTurkish: 'yapmak-etmek',
     },
     {
         verb1Name: 'meet',
