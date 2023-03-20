@@ -1,11 +1,20 @@
 body {
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
 .learn-verbs .first-title-width {
-    width: 70px;
+  width: 70px;
 }
 
 .learn-verbs .title-width {
-    width: 95px;
+  width: 95px;
+}
+.exercises-info {
+  text-align: justify;
+  /* color: red; */
+}
+.irregular {
+  color: #0d6efd;
+  position: absolute;
+  top: 40px;
 }
