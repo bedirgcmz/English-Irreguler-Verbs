@@ -18,3 +18,16 @@ body {
   position: absolute;
   top: 40px;
 }
+
+/* Learn verb css */
+#learn-verbs-container td {
+  min-width: 75px;
+}
+@media only screen and (max-width: 768px) {
+  .content-area {
+    width: 90% !important;
+  }
+}
+.exemple-sentences {
+  width: 90%;
+}

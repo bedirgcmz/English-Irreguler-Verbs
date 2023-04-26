@@ -94,6 +94,20 @@ function getNewVerb(pRandomNumber) {
         </tr>
     `;
 }
+
+const exampleSentencesRender = (pRandomNumber) => {
+  return `      
+        <p id="verb1">
+          <span class="text-primary fw-bolder">V1:</span> ${verbList[pRandomNumber].verb1Exp}          
+        </p>
+        <p id="verb2">
+          <span class="text-primary fw-bolder">V2: </span> ${verbList[pRandomNumber].verb2Exp} 
+        </p>
+        <p id="verb3">
+          <span class="text-primary fw-bolder">V3:</span> ${verbList[pRandomNumber].verb3Exp} 
+        </p>      
+  `;
+};
 /**
  * delete red icon, add green icon
  */
