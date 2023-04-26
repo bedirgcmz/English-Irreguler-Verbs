@@ -118,9 +118,9 @@ let verbList = [
     verb3Name: "come",
     verb3Pronunciation: "kam",
     verbTurkish: "gelmek",
-    verb1Exp: "We'll leave as soon as you get home.",
-    verb2Exp: "We left the book at home.",
-    verb3Exp: "He's left the house early this morning.",
+    verb1Exp: "We'll come tomorrow",
+    verb2Exp: "We came you yesterday",
+    verb3Exp: "He has always come the party",
   },
   {
     verb1Name: "leave",
